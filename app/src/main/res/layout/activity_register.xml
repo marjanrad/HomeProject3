@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/black"
+        android:gravity="center_vertical"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="serif"
+            android:gravity="center"
+            android:text="Register"
+            android:textColor="#dbd2caca"
+            android:textSize="40sp" />
+
+        <View
+            android:layout_width="250dp"
+            android:layout_height="1dp"
+            android:layout_gravity="center"
+            android:layout_marginBottom="30dp"
+            android:background="#e5d6d3d3" />
+
+
+        <EditText
+            android:id="@+id/registerName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/backgroundEdit"
+            android:hint="Name"
+            android:padding="12dp"
+            android:textColor="@color/textColor"
+            android:textColorHint="@color/textHintColor"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/registerAge"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:background="@color/backgroundEdit"
+            android:hint="Age"
+            android:inputType="number"
+            android:maxLength="2"
+            android:padding="12dp"
+            android:textColor="@color/textColor"
+            android:textColorHint="@color/textHintColor"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/registerWeb"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:background="@color/backgroundEdit"
+            android:hint="Website"
+            android:padding="12dp"
+            android:textColor="@color/textColor"
+            android:textColorHint="@color/textHintColor"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp">
+
+            <Button
+                android:id="@+id/registeRegister"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="register" />
+
+            <Button
+                android:id="@+id/registerReset"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="reset" />
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="left"
+        android:background="#333333"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/city" />
+
+        <Button
+            android:id="@+id/drawer_exit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="exit" />
+
+    </LinearLayout>
+
+
+</android.support.v4.widget.DrawerLayout>

@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#aa737373"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:padding="20dp"
+    tools:context=".ShowInfoDialog">
+
+    <LinearLayout
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:background="#f1747474"
+        android:orientation="horizontal"
+        android:padding="7dp">
+
+        <TextView
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:paddingLeft="5dp"
+            android:text="Name: "
+            android:textColor="@color/textColor"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/showInfoName"
+            android:layout_width="240dp"
+            android:layout_height="wrap_content"
+            android:paddingLeft="5dp"
+            android:textColor="@color/textColor"
+            android:textSize="17sp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="#f1747474"
+        android:orientation="horizontal"
+        android:padding="7dp">
+
+        <TextView
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:paddingLeft="5dp"
+            android:text="Age: "
+            android:textColor="@color/textColor"
+            android:textSize="17sp" />
+
+        <TextView
+            android:id="@+id/showInfoAge"
+            android:layout_width="240dp"
+            android:layout_height="wrap_content"
+            android:paddingLeft="5dp"
+            android:textColor="@color/textColor"
+            android:textSize="17sp" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/showInfoWebSite"
+        android:text="google.com"
+        android:padding="5dp"
+        android:layout_width="300dp"
+        android:gravity="center"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="#f1747474"
+        android:textColor="#333596" />
+
+    <Button
+        android:layout_width="200dp"
+        android:layout_marginTop="10dp"
+        android:id="@+id/showInfoConfirm"
+        android:layout_height="wrap_content"
+        android:text="confirm" />
+
+    <Button
+        android:layout_width="200dp"
+        android:id="@+id/showInfoChange"
+        android:layout_height="wrap_content"
+        android:text="change" />
+
+
+</LinearLayout>
